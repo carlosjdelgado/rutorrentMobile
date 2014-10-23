@@ -1,0 +1,110 @@
+/**********************************************************
+ * rutorrent Mobile: A mobile rutorrent plugin
+ * Author: Carlos Jimenez Delgado (mail@carlosjdelgado.com)
+ * License: GNU General Public License
+ **********************************************************/
+
+#list-info {
+	margin-top: 10px;
+}
+
+#list-info span{
+	position: relative;
+}
+
+#list-info-size {
+	clear:both;
+    float: right;
+}
+
+.progress {
+	margin-top:6px;
+}
+
+#progress-details {
+	margin-top:30px;
+	margin-bottom:40px;
+
+}
+
+.ui-btn-icon-right:after {
+	background-size: 20px 20px;
+	background-color: transparent; !important	
+}
+
+.ui-icon-Status_Down:after {background-image: url(../img/tstatusDown.png); background-repeat: no-repeat;}
+.ui-icon-Status_Up:after {background-image: url(../img/tstatusUp.png); background-repeat: no-repeat;}
+.ui-icon-Status_Incompleted:after {background-image: url(../img/tstatusIncompleted.png); background-repeat: no-repeat;}
+.ui-icon-Status_Paused:after {background-image: url(../img/tstatusPaused.png); background-repeat: no-repeat;}
+.ui-icon-Status_Error_Down:after {background-image: url(../img/tstatusErrorDown.png); background-repeat: no-repeat;}
+.ui-icon-Status_Error_Up:after {background-image: url(../img/tstatusErrorUp.png); background-repeat: no-repeat;}
+.ui-icon-Status_Error:after {background-image: url(../img/tstatusError.png); background-repeat: no-repeat;}
+.ui-icon-Status_Completed:after {background-image: url(../img/tstatusCompleted.png); background-repeat: no-repeat;}
+.ui-icon-Status_Queued_Down:after {background-image: url(../img/tstatusQueuedDown.png); background-repeat: no-repeat;}
+.ui-icon-Status_Queued_Up:after {background-image: url(../img/tstatusQueuedUp.png); background-repeat: no-repeat;}
+.ui-icon-Status_Up_Down:after {background-image: url(../img/tstatusUpDown.png); background-repeat: no-repeat; background-position: 0px -160px}
+.ui-icon-Status_Checking:after {background-image: url(../img/tstatusChecking.png); background-repeat: no-repeat; }
+.ui-icon-Status_RSS:after {background-image: url(../img/tstatusRss.png); background-repeat: no-repeat; background-position: 0px -208px}
+
+.progress {
+  height: 20px;
+  background: #ebebeb;
+  border-left: 1px solid transparent;
+  border-right: 1px solid transparent;
+  border-radius: 10px;
+}
+.progress > span {
+  position: relative;
+  float: left;
+  margin: 0 -1px;
+  min-width: 30px;
+  height: 18px;
+  line-height: 16px;
+  text-align: right;
+  background: #cccccc;
+  border: 1px solid;
+  border-color: #bfbfbf #b3b3b3 #9e9e9e;
+  border-radius: 10px;
+  background-image: -webkit-linear-gradient(top, #f0f0f0, #dbdbdb 70%, #cccccc);
+  background-image: -moz-linear-gradient(top, #f0f0f0, #dbdbdb 70%, #cccccc);
+  background-image: -o-linear-gradient(top, #f0f0f0, #dbdbdb 70%, #cccccc);
+  background-image: linear-gradient(to bottom, #f0f0f0, #dbdbdb 70%, #cccccc);
+  -webkit-box-shadow: inset 0 1px rgba(255, 255, 255, 0.3), 0 1px 2px rgba(0, 0, 0, 0.2);
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0.3), 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+.progress > span > span {
+  padding: 0 8px;
+  font-size: 11px;
+  font-weight: bold;
+  color: #404040;
+  color: rgba(0, 0, 0, 0.7);
+  text-shadow: 0 1px rgba(255, 255, 255, 0.4);
+}
+.progress > span:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  height: 18px;
+  background: url("../img/progress.png") 0 0 repeat-x;
+  border-radius: 10px;
+}
+.progress .green {
+  background: #85c440;
+  border-color: #78b337 #6ba031 #568128;
+  background-image: -webkit-linear-gradient(top, #b7dc8e, #99ce5f 70%, #85c440);
+  background-image: -moz-linear-gradient(top, #b7dc8e, #99ce5f 70%, #85c440);
+  background-image: -o-linear-gradient(top, #b7dc8e, #99ce5f 70%, #85c440);
+  background-image: linear-gradient(to bottom, #b7dc8e, #99ce5f 70%, #85c440);
+}
+.progress .orange {
+  background: #f2b63c;
+  border-color: #f0ad24 #eba310 #c5880d;
+  background-image: -webkit-linear-gradient(top, #f8da9c, #f5c462 70%, #f2b63c);
+  background-image: -moz-linear-gradient(top, #f8da9c, #f5c462 70%, #f2b63c);
+  background-image: -o-linear-gradient(top, #f8da9c, #f5c462 70%, #f2b63c);
+  background-image: linear-gradient(to bottom, #f8da9c, #f5c462 70%, #f2b63c);
+}

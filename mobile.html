@@ -1,0 +1,133 @@
+<!-- Begin main page -->
+<div data-role="page" id="home">
+	<div data-role="header" data-position="fixed">
+    	<h1 id="title"></h1>
+		<a id="button-menu" href="#menu" class="ui-btn ui-btn-inline"></a>
+		<a id="button-filter" href="#filter" class="ui-btn ui-btn-inline"></a>
+    </div>
+    <div data-role="content">
+		<ul id="list-torrents" data-role="listview"></ul>
+	</div>
+	<!-- Panels -->
+	<div data-role="panel" data-display="overlay" id="menu">
+		<a id="button-config" href="#settings" class="ui-btn"></a>
+		<a id="button-add" href="#add" class="ui-btn"></a>
+	</div>
+	<div data-role="panel" data-display="overlay" data-position="right" id="filter">
+		<select name="filter-type" id="filter-type" data-iconpos="left" onchange="mobile.filter(this.value,this);" ></select>
+		<select name="filter-order" id="filter-order" data-iconpos="left" ></select>
+		<select name="filter-criteria" id="filter-criteria" data-iconpos="left" ></select>
+ 	</div>
+	<!-- End Panels -->
+</div>
+<!-- End main page -->
+
+<!-- Begin Settings page -->
+<div data-role="page" id="settings">
+	<div data-role="header" data-position="fixed">
+    	<h1 id="settings-title"></h1>
+  		<a id="button-back" href="#home" class="back  ui-btn ui-btn-inline"></a>
+  		<a id="button-settings-ok" class="ui-btn ui-btn-inline"></a>
+    </div>
+    <div data-role="content">
+    	<label for="select-dl-limit"></label>
+    	<select name="select-dl-limit" id="select-dl-limit">
+			<option value="0" class="no-limit" selected="selected"></option>    	
+		</select>
+    	<label for="select-ul-limit"></label>
+    	<select name="select-ul-limit" id="select-ul-limit">
+			<option value="0" class="no-limit" selected="selected"></option>
+		</select>
+    </div>
+</div>	
+<!-- End Settings page -->
+
+<!-- Begin Add torrent page -->
+<div data-role="page" id="add">
+	<div data-role="header" data-position="fixed">
+    	<h1 id="addTorrent-title"></h1>
+  		<a id="button-back" href="#home" class="back ui-btn ui-btn-inline"></a>
+  		<a id="button-addTorrent-ok" class="ui-btn ui-btn-inline"></a>
+    </div>
+    <div data-role="content">
+    	<label for="input-url-torrent"></label>
+		<input data-clear-btn="true" name="input-url-torrent" id="input-url-torrent" value="" type="url">
+    </div>
+</div>	
+<!-- End Add torrent page -->
+
+<!-- Begin Details page -->
+<div data-role="page" id="details">
+	<div data-role="header" data-position="fixed">
+    	<h1 id="torrent-name"></h1>
+  		<a id="button-back" href="#home" class="back ui-btn ui-btn-inline"></a>
+  		<a id="button-actions" href="#actions" class="ui-btn ui-btn-inline"></a>
+	</div>
+	<!-- Begin content -->
+    <div data-role="content">
+		<div class="progress" id="progress-details">
+			<span>
+				<span></span>
+			</span>
+		</div>
+		<div data-role="tabs" id="tabs">
+			<div>
+				<div data-role="navbar">
+				    <ul>
+				        <li><a id="details-tab-title-general" href="#details-general" data-ajax="false" class="ui-btn-active"></a></li>
+				        <li><a id="details-tab-title-trackers" href="#details-trackers" data-ajax="false" ></a></li>
+				        <li><a id="details-tab-title-files" href="#details-files" data-ajax="false"></a></li>
+				    </ul>
+				</div>
+			</div>
+			<div id="details-general" class="ui-body-d ui-content">
+				<table data-role="table" id="details-general-table"	data-mode="reflow" class="ui-responsive" data-inset="true">
+					<thead><tr><th></th><th></th></tr></thead>
+					<tbody>
+ 						<tr id="status"><th></th><td></td></tr>
+						<tr id="priority"><th></th><td><select id="torrentPriority"></select></td></tr>
+						<tr id="done"><th></th><td></td></tr>
+						<tr id="downloaded"><th></th><td></td></tr>
+						<tr id="remaining"><th></th><td></td></tr>
+						<tr id="uploaded"><th></th><td></td></tr>
+						<tr id="downloadSpeed"><th></th><td></td></tr>
+						<tr id="uploadSpeed"><th></th><td></td></tr>
+						<tr id="ratio"><th></th><td></td></tr>
+						<tr id="timeElapsed"><th></th><td></td></tr>
+						<tr id="wasted"><th></th><td></td></tr>
+						<tr id="seeds"><th></th><td></td></tr>
+						<tr id="peers"><th></th><td></td></tr>
+					</tbody>
+				</table>
+	  		</div>
+	  		<div id="details-trackers"></div>
+	  		<div id="details-files">
+				<ul id="list-files" data-role="listview" data-inset="true"></ul>
+	  		</div>
+		</div>
+	</div>
+	<!-- End content -->
+	<div data-role="panel" data-display="overlay" data-position="right" id="actions">
+		<a id="button-start" class="ui-btn"></a>
+		<a id="button-pause" class="ui-btn"></a>
+		<a id="button-stop" class="ui-btn"></a>
+		<a id="button-delete" class="ui-btn"></a>
+ 	</div>
+	<div data-role="popup" id="popupDialog" data-dismissible="false" style="max-width:400px;">
+	    <div data-role="header">
+	    	<h1 id="dialog-title-delete"></h1>
+	    </div>
+	    <div role="main" class="ui-content">
+	        <h3 id="dialog-text-delete" class="ui-title"></h3>
+	        <a id="dialog-button-confirm-delete" class="ui-btn dialog-button-yes"></a>
+	        <a class="ui-btn dialog-button-no" data-rel="back"></a>
+	    </div>
+	</div>	
+</div>		
+<!-- End Details page -->
+		
+
+
+
+
+
