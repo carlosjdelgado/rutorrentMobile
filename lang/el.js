@@ -1,28 +1,29 @@
 ﻿/**********************************************************
  * rutorrent Mobile: A mobile rutorrent plugin
- * Author: Carlos Jimenez Delgado (mail@carlosjdelgado.com)
+ * Greek language file.
+ * Author: Author: Chris Kanatas (ckanatas@gmail.com)
  * License: GNU General Public License
  **********************************************************/
-theUILang.areYouShure = 'Do you really want to remove torrent?';
+theUILang.areYouShure = 'Θέλετε πραγματικά να διαγράψετε το torrent;';
 
-theUILang.Date = 		'Date';
-theUILang.Progress = 	'Progress';
-theUILang.Ascending = 	'Ascending';
-theUILang.Descending = 	'Descending';
+theUILang.Date = 		'Ημερομηνία';
+theUILang.Progress = 	'Πρόοδος';
+theUILang.Ascending = 	'Αύξουσα';
+theUILang.Descending = 	'Φθίνουσα';
 
-theUILang.Configuration = 	'Configuration';
+theUILang.Configuration = 	'Ρυθμίσεις';
 
-theUILang.Menu = 	'Menu';
-theUILang.Filter = 	'Filter';
+theUILang.Menu = 	'Μενού';
+theUILang.Filter = 	'Φίλτρο';
 
-theUILang.Back = 	'Back';
-theUILang.Ok = 		'Acept';
+theUILang.Back = 	'Πίσω';
+theUILang.Ok = 		'Αποδοχή';
 
-theUILang.DownloadLimit = 	'Download limit';
-theUILang.UploadLimit =		'Upload limit';
+theUILang.DownloadLimit = 	'Όριο ταχύτητας κατεβάσματος';
+theUILang.UploadLimit =		'Όριο ταχύτητας ανεβάσματος';
 
-theUILang.InserUrlLabel =	'Set torrent file URL';
+theUILang.InserUrlLabel =	'Ορισμός URL του αρχείου torrent';
 
-theUILang.Actions =	'Actions';
+theUILang.Actions =	'Ενέργειες';
 
 mobile.onLangLoaded();
