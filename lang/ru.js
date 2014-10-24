@@ -3,26 +3,26 @@
  * Author: Carlos Jimenez Delgado (mail@carlosjdelgado.com)
  * License: GNU General Public License
  **********************************************************/
-theUILang.areYouShure = 'Do you really want to remove torrent?';
+theUILang.areYouShure = 'Вы действительно хотите удалить торрент?';
 
-theUILang.Date = 		'Date';
-theUILang.Progress = 	'Progress';
-theUILang.Ascending = 	'Ascending';
-theUILang.Descending = 	'Descending';
+theUILang.Date = 		'Дата';
+theUILang.Progress = 	'Прогресс';
+theUILang.Ascending = 	'По возрастанию';
+theUILang.Descending = 	'По уменьшению';
 
-theUILang.Configuration = 	'Configuration';
+theUILang.Configuration = 	'Конфигурация';
 
-theUILang.Menu = 	'Menu';
-theUILang.Filter = 	'Filter';
+theUILang.Menu = 	'Меню';
+theUILang.Filter = 	'Фильтр';
 
-theUILang.Back = 	'Back';
-theUILang.Ok = 		'Acept';
+theUILang.Back = 	'Назад';
+theUILang.Ok = 		'OK';
 
-theUILang.DownloadLimit = 	'Download limit';
-theUILang.UploadLimit =		'Upload limit';
+theUILang.DownloadLimit = 	'Ограничение закачки';
+theUILang.UploadLimit =		'Ограничение отдачи';
 
-theUILang.InserUrlLabel =	'Set torrent file URL';
+theUILang.InserUrlLabel =	'Введите URL торрента';
 
-theUILang.Actions =	'Actions';
+theUILang.Actions =	'Команды';
 
 mobile.onLangLoaded();
