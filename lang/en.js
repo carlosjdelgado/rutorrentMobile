@@ -16,7 +16,7 @@ theUILang.Menu = 	'Menu';
 theUILang.Filter = 	'Filter';
 
 theUILang.Back = 	'Back';
-theUILang.Ok = 		'Acept';
+theUILang.Ok = 		'Accept';
 
 theUILang.DownloadLimit = 	'Download limit';
 theUILang.UploadLimit =		'Upload limit';
