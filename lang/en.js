@@ -3,7 +3,7 @@
  * Author: Carlos Jimenez Delgado (mail@carlosjdelgado.com)
  * License: GNU General Public License
  **********************************************************/
-theUILang.areYouShure = 'Do you really want to remove torrent?';
+theUILang.areYouShure = 'Do you really want to remove this torrent?';
 
 theUILang.Date = 		'Date';
 theUILang.Progress = 	'Progress';
@@ -16,7 +16,7 @@ theUILang.Menu = 	'Menu';
 theUILang.Filter = 	'Filter';
 
 theUILang.Back = 	'Back';
-theUILang.Ok = 		'Acept';
+theUILang.Ok = 		'Accept';
 
 theUILang.DownloadLimit = 	'Download limit';
 theUILang.UploadLimit =		'Upload limit';
