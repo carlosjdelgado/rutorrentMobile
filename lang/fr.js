@@ -19,9 +19,9 @@ theUILang.Back = 	'Retour';
 theUILang.Ok = 		'Ok';
 
 theUILang.DownloadLimit = 	'Limite de téléchargement';
-theUILang.UploadLimit =		'Limite d'émission;
+theUILang.UploadLimit =		'Limite d\'émission';
 
-theUILang.InserUrlLabel =	'Ajouter l'URL d'un torrent';
+theUILang.InserUrlLabel =	'Ajouter l\'URL d\'un torrent';
 
 theUILang.Actions =	'Actions';
 
