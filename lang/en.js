@@ -3,7 +3,7 @@
  * Author: Carlos Jimenez Delgado (mail@carlosjdelgado.com)
  * License: GNU General Public License
  **********************************************************/
-theUILang.areYouShure = 'Do you really want to remove torrent?';
+theUILang.areYouShure = 'Do you really want to remove this torrent?';
 
 theUILang.Date = 		'Date';
 theUILang.Progress = 	'Progress';
