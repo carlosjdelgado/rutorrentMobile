@@ -213,7 +213,7 @@ plugin.fillFiles = function() {
 				
 				listElement.append(fileHtml);
 			}
-			listElement.listview('refresh');
+			listElement.listview().listview('refresh');
 		});
 	}
 }
@@ -349,7 +349,7 @@ plugin.update = function() {
 			plugin.order(plugin.currOrder, plugin.currCriteria);
 
 			try {
-				listElement.listview('refresh');
+				listElement.listview().listview('refresh');
 			}
 			catch(err) {
 			    console.log(err.message);
@@ -418,7 +418,7 @@ plugin.init = function() {
 		
 		this.lastHref = window.location.href;
 
-		setInterval(function() {plugin.backListener();}, 500);
+		//setInterval(function() {plugin.backListener();}, 500);
 
 		var jQueryVer = jQuery.fn.jquery.split('.');
 		if ((jQueryVer[0] == 1) && (jQueryVer[1] >= 7))
@@ -442,11 +442,11 @@ plugin.init = function() {
 				$('link[rel=stylesheet]').remove();
 				$('style').remove();
 				
-				plugin.loadCSS('css/jquery.mobile-1.4.3.min');
+				plugin.loadCSS('css/jquery.mobile-1.4.5.min');
 				plugin.loadCSS('css/rutorrentMobile');
 
 				if (plugin.jqueryMobile) {
-					injectScript(plugin.path+'js/jquery.mobile-1.4.3.min.js');
+					injectScript(plugin.path+'js/jquery.mobile-1.4.5.min.js');
 				}
 				$('#title').text("ruTorrent v" + theWebUI.version);
 
