@@ -689,7 +689,7 @@ plugin.fillUIControls = function() {
 
 /**
  * jQuery.browser.mobile (http://detectmobilebrowser.com/)
- * Regex updated: 3 July 2012
+ * Regex updated: 1 August 2014
  *
  * jQuery.browser.mobile will be true if the browser is a mobile device
  *
