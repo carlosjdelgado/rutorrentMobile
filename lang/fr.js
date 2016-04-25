@@ -3,7 +3,8 @@
  * Author: Carlos Jimenez Delgado (mail@carlosjdelgado.com)
  * License: GNU General Public License
  **********************************************************/
-theUILang.areYouShure = 'Voulez-vous vraiment supprimer ce torrent ?';
+
+theUILang.areYouShure = 'Voulez-vous vraiment effacer le torrent selectionné ?';
 
 theUILang.Date = 		'Date';
 theUILang.Progress = 	'Etat';
